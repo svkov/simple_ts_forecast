@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import pywt
 from sklearn.metrics import mean_absolute_error
 
-from models.fourier import get_predict
+from simple_ts_forecast.fourier import get_predict
 from utils import train_test_split, get_grid_from_dict, transform_date_start
-from models.model import Model
+from simple_ts_forecast.model import Model
 
 
 def generate_shapes(len_old, horizont, wt, level):
@@ -88,7 +88,7 @@ class Wavelet(Model):
         Wavelet model fitted by series itself.
 
         df - df with column `price`
-        n - horizon of models
+        n - horizon of simple_ts_forecast
         level - how many times to decompose (if None will be set to max level)
         wt - which wavelet function to use from pywt library (if None will be fitted best)
         forecast - method which takes 1d vector and n and return prediction of len n (if None fourier model will be used)

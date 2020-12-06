@@ -17,7 +17,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 from dateutil.relativedelta import relativedelta
-from models import Model
+from simple_ts_forecast import Model
 
 SavedFit = namedtuple('SavedFit', 'filename date_test_start datetime_fit mape')
 
@@ -45,7 +45,7 @@ def mean_absolute_percent_error(y_test, y_pred, torch_order=False):
 
 
 class LSTM(Model):
-    """Use this class as another classic models"""
+    """Use this class as another classic simple_ts_forecast"""
 
     class _Model(nn.Module):
         """PyTorch RNN model"""
@@ -116,7 +116,7 @@ class LSTM(Model):
             train_set_prop (float, optional): if not providing sate_test_start uses these coef to slicing train data. Defaults to 0.9.
             batch_size (int, optional): batch size for train. Defaults to 175.
             n_epochs (int, optional): number epochs for train. Defaults to 30.
-            models_dir (str, optional): path to saves of models. Defaults to 'lstm_saves/ts_mnpz/'.
+            models_dir (str, optional): path to saves of simple_ts_forecast. Defaults to 'lstm_saves/ts_mnpz/'.
             days_between_fits (int, optional): days between fits for predict for report. Defaults to 31.
             n_fits (int, optional): number of fits for one test data. Defaults to 3.
             search_window (int, optional): search saved fit up to search_window days back. Defaults to 14.

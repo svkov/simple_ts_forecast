@@ -6,7 +6,7 @@ from numpy import fft
 
 from utils import get_grid_from_dict, get_nmape, transform_date_start
 
-from models.model import Model
+from simple_ts_forecast.model import Model
 
 
 def get_predict(x, n=14, n_harm=1000, trend_deg=1):

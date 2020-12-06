@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from numpy.linalg import LinAlgError
 from statsmodels.tsa.api import VAR
-from models.model import Model
+from simple_ts_forecast.model import Model
 from utils import transform_date_start
 
 

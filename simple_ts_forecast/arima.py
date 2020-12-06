@@ -1,7 +1,7 @@
 import pmdarima as pmd
 import pandas as pd
 
-from models.model import Model
+from simple_ts_forecast.model import Model
 from utils import transform_date_start
 
 import warnings

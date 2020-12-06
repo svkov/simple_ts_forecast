@@ -1,6 +1,6 @@
 from datetime import timedelta
 
-from models.model import Model
+from simple_ts_forecast.model import Model
 import pandas as pd
 
 from utils import transform_date_start
