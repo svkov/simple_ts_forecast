@@ -1,0 +1,12 @@
+name: simple_ts_forecast
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas
+  - numpy
+  - sklearn
+  - pywt
+  - matplotlib
+  - statsmodels
+  - pmdarima
