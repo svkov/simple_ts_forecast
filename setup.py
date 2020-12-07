@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="simple-ts-forecast",
-    version="0.0.1",
+    version="0.0.2",
     author="svkov",
     author_email="kovalev.svyatoslav42@gmail.com",
     description="A simle library for time series forecasting",
