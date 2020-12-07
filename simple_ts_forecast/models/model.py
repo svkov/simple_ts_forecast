@@ -1,6 +1,6 @@
 import pandas as pd
 
-from utils import transform_date_start
+from simple_ts_forecast.utils import transform_date_start
 
 
 class Model:

@@ -1,7 +1,5 @@
-import pandas as pd
 import numpy as np
-from utils import transform_date_start
-from simple_ts_forecast.model import Model
+from simple_ts_forecast.models.model import Model
 
 
 class Baseline(Model):

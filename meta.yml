@@ -5,21 +5,14 @@ package:
   version: {{ version }}
 
 source:
-  git_url: https://github.com/svkov/simple_ts_forecast
-
-build:
-  script: python -m pip install --no-deps --ignore-installed .
+  git_url: https://github.com/svkov/simple_ts_forecast.git
 
 requirements:
-  host:
+  build:
     - python
-    - pip
+    - setuptools
   run:
     - python
-
-test:
-  imports:
-    - imagesize
 
 about:
   home: https://github.com/svkov/simple_ts_forecast

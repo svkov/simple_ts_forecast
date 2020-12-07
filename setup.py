@@ -17,5 +17,14 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
+    install_requires=[
+        'numpy',
+        'pandas',
+        'statsmodels',
+        'pmdarima',
+        'matplotlib',
+        'pywt',
+        'sklearn'
+    ],
     python_requires='>=3.8',
 )

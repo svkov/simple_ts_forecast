@@ -1,8 +1,8 @@
 import pmdarima as pmd
 import pandas as pd
 
-from simple_ts_forecast.model import Model
-from utils import transform_date_start
+from simple_ts_forecast.models.model import Model
+from simple_ts_forecast.utils import transform_date_start
 
 import warnings
 warnings.filterwarnings("ignore")

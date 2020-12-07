@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from itertools import product
 from datetime import datetime, timedelta
-import telegram_send
+# import telegram_send
 
 
 def validate_df(needed_columns, df_columns):
@@ -170,14 +170,14 @@ def prepare_test_dataframe(df, date_start, date_end, n):
     return pd.DataFrame(tests, columns=columns, index=index)
 
 
-def send_to_telegram_if_fails(func, *args, **kwargs):
-    def wrapper():
-        try:
-            res = func(*args, **kwargs)
-            # telegram_send.send(messages=[f'Функция {func.__name__} посчиталась'])
-            return res
-        except Exception as e:
-            telegram_send.send(messages=[f'Что-то пошло не так: {e}', f'Функция {func}'])
-            raise e
-
-    return wrapper
+# def send_to_telegram_if_fails(func, *args, **kwargs):
+#     def wrapper():
+#         try:
+#             res = func(*args, **kwargs)
+#             # telegram_send.send(messages=[f'Функция {func.__name__} посчиталась'])
+#             return res
+#         except Exception as e:
+#             telegram_send.send(messages=[f'Что-то пошло не так: {e}', f'Функция {func}'])
+#             raise e
+#
+#     return wrapper

@@ -17,7 +17,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 from dateutil.relativedelta import relativedelta
-from simple_ts_forecast import Model
+from simple_ts_forecast.models import Model
 
 SavedFit = namedtuple('SavedFit', 'filename date_test_start datetime_fit mape')
 

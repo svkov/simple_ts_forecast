@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import pywt
 from sklearn.metrics import mean_absolute_error
 
-from simple_ts_forecast.fourier import get_predict
-from utils import train_test_split, get_grid_from_dict, transform_date_start
-from simple_ts_forecast.model import Model
+from simple_ts_forecast.models.fourier import get_predict
+from simple_ts_forecast.utils import train_test_split, get_grid_from_dict
+from simple_ts_forecast.models.model import Model
 
 
 def generate_shapes(len_old, horizont, wt, level):

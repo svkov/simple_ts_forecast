@@ -1,9 +1,6 @@
-import numpy as np
-import pandas as pd
 from numpy.linalg import LinAlgError
 from statsmodels.tsa.api import VAR
-from simple_ts_forecast.model import Model
-from utils import transform_date_start
+from simple_ts_forecast.models.model import Model
 
 
 class MyVAR(Model):

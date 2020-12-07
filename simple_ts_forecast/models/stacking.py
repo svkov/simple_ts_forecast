@@ -1,9 +1,9 @@
 import pandas as pd
 import numpy as np
-from utils import prepare_test_dataframe, transform_date_start
+from simple_ts_forecast.utils import prepare_test_dataframe, transform_date_start
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
-from simple_ts_forecast.model import Model
+from simple_ts_forecast.models.model import Model
 import matplotlib.pyplot as plt
 from typing import Iterable, Dict
 
